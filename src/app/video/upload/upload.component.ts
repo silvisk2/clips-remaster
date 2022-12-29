@@ -120,7 +120,7 @@ export class UploadComponent implements OnDestroy {
       error: (error) => {
         this.uploadForm.enable()
 
-        this.alertColor = 'red',
+        this.alertColor = 'red'
         this.alertMsg = 'Uploaded failed! Plase try again later.'
         this.inSubmission = true
         this.showPercentage = false
