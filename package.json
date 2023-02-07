@@ -24,25 +24,25 @@
     "@ffmpeg/ffmpeg": "^0.11.6",
     "@firebase/firestore": "^3.8.0",
     "@types/uuid": "^9.0.0",
-    "@types/video.js": "^7.3.51",
-    "@types/videojs": "^5.16.2",
-    "@videojs/http-streaming": "^3.0.0",
-    "@videojs/themes": "^1.0.1",
+    "@videogular/ngx-videogular": "^7.0.1",
     "ffmpeg": "^0.0.4",
     "firebase": "^9.15.0",
+    "install": "^0.13.0",
     "ngx-mask": "^14.2.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "uuid": "^9.0.0",
-    "video.js": "^8.0.4",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.0.1",
     "@angular/cli": "~15.0.1",
     "@angular/compiler-cli": "^15.0.0",
+    "@types/core-js": "^2.5.5",
     "@types/jasmine": "~4.3.0",
     "@types/node": "^18.11.19",
+    "@types/video.js": "^7.3.51",
+    "@videojs/themes": "^1.0.1",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -51,6 +51,7 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "tailwindcss": "^3.2.4",
     "typescript": "~4.8.2",
+    "video.js": "^8.0.4",
     "webpack-cli": "^5.0.1"
   }
 }

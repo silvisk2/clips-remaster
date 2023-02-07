@@ -18,6 +18,10 @@ import { AngularFireStorageModule} from '@angular/fire/compat/storage';
 import { ClipsListComponent } from './clips-list/clips-list.component';
 import { FbTimestampPipe } from './pipes/fb-timestamp.pipe'
 
+import { VgCoreModule } from '@videogular/ngx-videogular/core';
+import { VgControlsModule } from '@videogular/ngx-videogular/controls';
+import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
+import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,8 @@ import { FbTimestampPipe } from './pipes/fb-timestamp.pipe'
     ClipComponent,
     NotFoundComponent,
     ClipsListComponent,
-    FbTimestampPipe
+    FbTimestampPipe,
+
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,12 @@ import { FbTimestampPipe } from './pipes/fb-timestamp.pipe'
     AngularFirestoreModule,
     VideoModule,
     AppRoutingModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

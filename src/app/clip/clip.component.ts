@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
-import videojs from 'video.js';
+import  videojs  from 'video.js';
 
+
+import { ActivatedRoute, Params } from '@angular/router';
+import {Component, ElementRef, Input, OnDestroy, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-clip',
@@ -12,7 +13,7 @@ import videojs from 'video.js';
 export class ClipComponent implements OnInit {
   id = ''
   @ViewChild('videoPlayer', { static: true }) target?: ElementRef
-  player?: videojs.Player;
+  player?: videojs.Player
 
 
   constructor(public route: ActivatedRoute) {}
@@ -25,4 +26,3 @@ export class ClipComponent implements OnInit {
     })
   }
 }
-
