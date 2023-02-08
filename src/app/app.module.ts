@@ -1,4 +1,3 @@
-import { VideoModule } from './video/video.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,10 +17,7 @@ import { AngularFireStorageModule} from '@angular/fire/compat/storage';
 import { ClipsListComponent } from './clips-list/clips-list.component';
 import { FbTimestampPipe } from './pipes/fb-timestamp.pipe'
 
-import { VgCoreModule } from '@videogular/ngx-videogular/core';
-import { VgControlsModule } from '@videogular/ngx-videogular/controls';
-import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
-import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
+
 
 @NgModule({
   declarations: [
@@ -41,14 +37,8 @@ import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    VideoModule,
     AppRoutingModule,
     AngularFireStorageModule,
-
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
